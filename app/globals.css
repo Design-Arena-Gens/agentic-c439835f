@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b1720;
+  --card: #0f2430;
+}
+
+html, body, :root { height: 100%; }
+
+body {
+  @apply bg-slate-900 text-white antialiased;
+}
+
+.container-section {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply bg-slate-800/60 backdrop-blur border border-slate-700 rounded-xl shadow-xl;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 font-semibold text-white shadow-lg shadow-primary/20 hover:bg-primary-dark transition-colors;
+}
+
+.link {
+  @apply text-primary hover:text-primary-light transition-colors;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold tracking-tight;
+}
